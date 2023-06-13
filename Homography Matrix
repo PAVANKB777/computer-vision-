@@ -1,0 +1,21 @@
+import cv2
+import numpy as np
+
+
+img = cv2.imread("C:/Users/Dasthagiri/OneDrive/Pictures/Saved Pictures/Sasuke Wallpaper iPhone 4.png")
+
+
+target_corners = np.array([[0, 0], [img.shape[1]-1, 0], [img.shape[1]-1, img.shape[0]-1], [0, img.shape[0]-1]])
+
+
+source_corners = np.array([[100, 100], [img.shape[1]-200, 200], [img.shape[1]-100, img.shape[0]-200], [200, img.shape[0]-100]])
+
+
+homography, _ = cv2.findHomography(source_corners, target_corners)
+
+
+output_img = cv2.warpPerspective(img, homography, (img.shape[1], img.shape[0]))
+
+
+cv2.imshow("Output Image", output_img)
+cv2.waitKey(0)
