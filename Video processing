@@ -1,5 +1,5 @@
 mport cv2
-cap = cv2.VideoCapture("C:/Users/Dasthagiri/OneDrive/Pictures/Camera Roll/WIN_20230502_11_01_05_Pro.mp4")
+cap = cv2.VideoCapture("C:/Users/Pavan/OneDrive/Pictures/Camera Roll/WIN_20230502_11_01_05_Pro.mp4")
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
