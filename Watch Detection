@@ -4,7 +4,7 @@ import cv2
 watch_cascade = cv2.CascadeClassifier("C:/Users/aspi/Desktop/cv/watch-cascade.xml")
 
 # Load the input image
-img = cv2.imread("C:/Users/Dasthagiri/Downloads/watch.jpg")
+img = cv2.imread("C:/Users/Pavan/Downloads/watch.jpg")
 
 # Convert the image to grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
