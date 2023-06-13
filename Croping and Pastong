@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
  
-image = cv2.imread("C:/Users/Dasthagiri/Downloads/spiderman.png")
+image = cv2.imread("C:/Users/Pavan/Downloads/spiderman.png")
 print(image.shape) # Print image shape
 cv2.imshow("original", image)
 imageCopy = image.copy()
@@ -32,8 +32,8 @@ cv2.destroyAllWindows()
 import cv2
 
 # Load images
-img1 = cv2.imread("C:/Users/Dasthagiri/Downloads/spiderman.png")
-img2 = cv2.imread("C:/Users/Dasthagiri/Downloads/spiderman.png")
+img1 = cv2.imread("C:/Users/Pavan/Downloads/spiderman.png")
+img2 = cv2.imread("C:/Users/Pavan/Downloads/spiderman.png")
 
 # Crop a region of interest (ROI) from img1
 roi = img1[100:300, 200:400]
