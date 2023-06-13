@@ -5,12 +5,12 @@ import numpy as np
 if __name__ == '__main__' :
  
     # Read source image.
-    im_src = cv2.imread("C:/Users/Dasthagiri/OneDrive/Pictures/Saved Pictures/Naruto Wallpaper iPhone 4.png")
+    im_src = cv2.imread("C:/Users/Pavan/OneDrive/Pictures/Saved Pictures/Naruto Wallpaper iPhone 4.png")
     # Four corners of the book in source image
     pts_src = np.array([[141, 131], [480, 159], [493, 630],[64, 601]])
  
     # Read destination image.
-    im_dst = cv2.imread("C:/Users/Dasthagiri/OneDrive/Pictures/Saved Pictures/Naruto Wallpaper iPhone 4.png")
+    im_dst = cv2.imread("C:/Users/Pavan/OneDrive/Pictures/Saved Pictures/Naruto Wallpaper iPhone 4.png")
     # Four corners of the book in destination image.
     pts_dst = np.array([[318, 256],[534, 372],[316, 670],[73, 473]])
  
