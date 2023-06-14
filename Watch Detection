@@ -16,6 +16,7 @@ watches = watch_cascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=5)
 for (x, y, w, h) in watches:
     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
+
 # Display the output image
 cv2.imshow('Watches Detected', img)
 cv2.waitKey(0)
